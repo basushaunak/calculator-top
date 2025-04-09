@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
+
+header img{
+    width: 150px;
+    margin: 20px;
+}
+
+footer > p{
+    color: yellow;
+}
+
+.wrapper{
+    width: 450px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #540405;
+}
+
+#calculator-display{
+    width: 400px;
+    min-height: 3rem;
+    background-color: rgb(233, 233, 180);
+    border: 4px solid black;
+    font-size: 2.5rem;
+    font-family: 'Orbitron', sans-serif;
+    text-align: right;
+    padding-inline-end: 10px;
+    margin-inline:auto;
+}
+
+#buttons-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+.number-buttons-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-block-start: 20px;
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.operator-buttons-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4 1fr);
+    gap: 10px;
+    margin-block-start: 20px;
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-inline: auto ;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(107, 99, 99);
+    width: 5rem;
+    height: 5rem;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+#button-c{
+    color: red;
+}
+#button-equals{
+    width: 70%;
+    margin-inline: auto;
+    margin-block:10px 20px;
+}
